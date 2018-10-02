@@ -2,15 +2,25 @@
 
 ## Weights and Biases Integration with PyTorch
 
-[wandb.com]
+[Weights and Biases](wandb.com)
 
 Sign up to hear when we'll release this integration officially
 
-[Poster](W&B PyTorch Conference Poster.pdf)
+[Our poster](wandb-pytorch-conf-poster.pdf)
 
 Code instructions
 
+```git clone https://github.com/fastai/fastai.git
+pip install -e .
+pip install --upgrade torch
+cd ..
+git clone git@github.com:wandb/pytorch-conference.git
+cd pytorch-conference
+sh get_data.sh
+PYTHONPATH=../fastai/ python train_rnn.py 5e-3 --wd=1e-6 --qrnn=True
+```
 
+The original README from [Sylvain Gugger's repository](https://github.com/sgugger/Adam-experiments) follows
 
 # Experiments with Adam
 
