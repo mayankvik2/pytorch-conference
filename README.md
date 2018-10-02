@@ -1,22 +1,30 @@
 # PyTorch Visualizations Are All You Need
 
+[Sign up](https://wandb.typeform.com/to/mtL4L4) to hear when we release this integration officially.
+
 ## Weights and Biases Integration with PyTorch
 
 [Weights and Biases](wandb.com) tracks your ML experiment trials, helping you manage incremental code changes and hyperparameter tweaks. It's a bit like a hosted, framework-agnostic version of TensorBoard.
 
-Sign up to hear when we'll release this integration officially
+Check out [our poster](wandb-pytorch-conf-poster.pdf)
 
-[Our poster](wandb-pytorch-conf-poster.pdf)
+Code instructions (broken)
 
-Code instructions (Python 3)
+*These instructions don't work due to library conflicts*
+*Python 3.5 doesn't work because fast.ai uses f-strings and didn't work with future-fstrings*
+*Python 3.7 won't work because the version of fast.ai we need uses `async` as a variable name*
 
 ```Shell
 git clone https://github.com/fastai/fastai.git
-pip install -e fastai
-pip install --upgrade torch torchvision fire ipython git+https://github.com/wandb/client.git@task/pytorch-conf
+cd fastai
+git checkout faa7752a78e9f6204ef97880c1480a8582b4433c  # unfortunately uses "async" as a variable
+pip install -e .
+cd ..
+pip install --upgrade torch torchvision fire cupy ipython git+https://github.com/wandb/client.git@task/pytorch-conf
+
 git clone git@github.com:wandb/pytorch-conference.git
 cd pytorch-conference
-sh get_data.sh
+./get_data.sh
 PYTHONPATH=../fastai/ python train_rnn.py 5e-3 --wd=1e-6 --qrnn=True
 ```
 
