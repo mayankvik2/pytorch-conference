@@ -12,7 +12,7 @@ Code instructions
 
 ```git clone https://github.com/fastai/fastai.git
 pip install -e .
-pip install --upgrade torch
+pip install --upgrade torch git+https://github.com/wandb/client.git@task/pytorch-conf
 cd ..
 git clone git@github.com:wandb/pytorch-conference.git
 cd pytorch-conference
