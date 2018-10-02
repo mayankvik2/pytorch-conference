@@ -8,13 +8,12 @@ Sign up to hear when we'll release this integration officially
 
 [Our poster](wandb-pytorch-conf-poster.pdf)
 
-Code instructions
+Code instructions (Python 3)
 
 ```Shell
 git clone https://github.com/fastai/fastai.git
-pip install -e .
-pip install --upgrade torch git+https://github.com/wandb/client.git@task/pytorch-conf
-cd ..
+pip install -e fastai
+pip install --upgrade torch torchvision fire ipython git+https://github.com/wandb/client.git@task/pytorch-conf
 git clone git@github.com:wandb/pytorch-conference.git
 cd pytorch-conference
 sh get_data.sh
