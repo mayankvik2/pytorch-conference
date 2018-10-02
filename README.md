@@ -10,7 +10,8 @@ Sign up to hear when we'll release this integration officially
 
 Code instructions
 
-```git clone https://github.com/fastai/fastai.git
+```Shell
+git clone https://github.com/fastai/fastai.git
 pip install -e .
 pip install --upgrade torch git+https://github.com/wandb/client.git@task/pytorch-conf
 cd ..
