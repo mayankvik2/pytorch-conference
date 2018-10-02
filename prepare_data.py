@@ -45,8 +45,8 @@ def prepare_wt2():
     
 
 def prepare_data():
-    prepare_cars()
-    prepare_cifar10()
+    #prepare_cars()
+    #prepare_cifar10()
     prepare_wt2()
 
 if __name__ == '__main__': fire.Fire(prepare_data)
