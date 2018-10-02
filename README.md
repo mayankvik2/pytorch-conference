@@ -2,7 +2,7 @@
 
 ## Weights and Biases Integration with PyTorch
 
-[Weights and Biases](wandb.com)
+[Weights and Biases](wandb.com) tracks your ML experiment trials, helping you manage incremental code changes and hyperparameter tweaks. It's a bit like a hosted, framework-agnostic version of TensorBoard.
 
 Sign up to hear when we'll release this integration officially
 
