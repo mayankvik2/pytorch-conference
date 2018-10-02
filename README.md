@@ -11,7 +11,9 @@ Check out [our poster](wandb-pytorch-conf-poster.pdf)
 Code instructions (broken)
 
 *These instructions don't work due to library conflicts*
+
 *Python 3.5 doesn't work because fast.ai uses f-strings and didn't work with future-fstrings*
+
 *Python 3.7 won't work because the version of fast.ai we need uses `async` as a variable name*
 
 ```Shell
