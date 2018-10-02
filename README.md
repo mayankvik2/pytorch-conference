@@ -1,3 +1,17 @@
+# PyTorch Visualizations Are All You Need
+
+## Weights and Biases Integration with PyTorch
+
+[wandb.com]
+
+Sign up to hear when we'll release this integration officially
+
+[Poster](W&B PyTorch Conference Poster.pdf)
+
+Code instructions
+
+
+
 # Experiments with Adam
 
 This repo contains the scripts used to perform the experiments in [this blog post](http://www.fast.ai/2018/07/02/adam-weight-decay/). If you're using this code or our results, please cite it appropriately. 
